@@ -1,13 +1,14 @@
 # Numerical solution of optimal control problems using quadratic transport regularization
 
 
-This repository contains an implementation of an example for optimal control problems using optimal transport regularization made in the preprint
+This repository contains an implementation for solving optimal control problems with optimal transport regularization.
+The algorithms are developed in the preprint
 [Numerical solution of optimal control problems using quadratic transport regularization](arxiv todo).
-There $g(u)+W(u)$ is minimized,
+We minimize $g(u) + W(u)$ is minimized,
 where $g$ is a smooth function and $W$ is the squared quadratic Monge-Kantorovich distance (also known as Wasserstein distance).
 
-The examples 1-6 and additionally the three algorithms starting with "solve" can be executed.
-Here, we shortly write down what they do.
+The examples 1-6 can directly be executed. The three solution algorithms starting with `solve_` can also be called independently.
+Here, we shortly describe what they do.
 
 `solve_fixed_point.m`: Armijo line search algorithm using $r(w)$ as search direction. The equation $r(w) = 0$ is the optimality condition of the problem. It can also be seen as some gradient method. This algorithm is rather slow.
 
