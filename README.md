@@ -3,12 +3,11 @@
 
 This repository contains an implementation for solving optimal control problems with optimal transport regularization.
 The algorithms are developed in the preprint
-[Numerical solution of optimal control problems using quadratic transport regularization](arxiv todo).
-We minimize $g(u) + W(u)$ is minimized,
+[Numerical solution of optimal control problems using quadratic transport regularization](https://arxiv.org/abs/2503.07105).
+We minimize $g(u) + W(u)$,
 where $g$ is a smooth function and $W$ is the squared quadratic Monge-Kantorovich distance (also known as Wasserstein distance).
 
-The examples 1-6 can directly be executed. The three solution algorithms starting with `solve_` can also be called independently.
-Here, we shortly describe what they do.
+The examples 1-6 can be directly executed. The three solution algorithms starting with `solve_` can also be called independently.
 
 `solve_fixed_point.m`: Armijo line search algorithm using $r(w)$ as search direction. The equation $r(w) = 0$ is the optimality condition of the problem. It can also be seen as some gradient method. This algorithm is rather slow.
 
@@ -29,13 +28,19 @@ Here, we shortly describe what they do.
 `ex_6_nonconvex.m`: shows two different local solutions for a nonconvex smooth function $g$.
 
 ## Citation
-If you find this helpful, please cite our manuscript
+If you find this helpful, please cite the paper and the source code as
 ```bibtex
 @online{BorchardWachsmuth2025:1,
-  author        = {},
-  title         = {},
-  year          = {},
-  eprint        = {},
+  author        = {Nicolas Borchard and Gerd Wachsmuth},
+  title         = {Numerical solution of optimal control problems using quadratic transport regularization},
+  year          = {2025},
+  eprint        = {2503.07105},
   eprinttype    = {arXiv}
+}
+@misc{BorchardWachsmuth2025:2,
+  author        = {Nicolas Borchard and Gerd Wachsmuth},
+  title         = {Numerical solution of optimal control problems using quadratic transport regularization},
+  year          = {2025},
+  doi           = {10.5281/zenodo.???}
 }
 ```
