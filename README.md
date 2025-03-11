@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/944516301.svg)](https://doi.org/10.5281/zenodo.15005048)
+
 # Numerical solution of optimal control problems using quadratic transport regularization
 
 
@@ -41,6 +43,6 @@ If you find this helpful, please cite the paper and the source code as
   author        = {Nicolas Borchard and Gerd Wachsmuth},
   title         = {Numerical solution of optimal control problems using quadratic transport regularization},
   year          = {2025},
-  doi           = {10.5281/zenodo.???}
+  doi           = {10.5281/zenodo.15005048}
 }
 ```
